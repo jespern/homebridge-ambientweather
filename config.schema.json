@@ -1,15 +1,27 @@
 {
-  "pluginAlias": "ExampleHomebridgePlugin",
+  "pluginAlias": "AmbientWeather",
   "pluginType": "platform",
   "singular": true,
   "schema": {
     "type": "object",
     "properties": {
-      "name": {
-        "title": "Name",
+      "api_key": {
+        "title": "API Key",
         "type": "string",
         "required": true,
-        "default": "Example Dynamic Platform"
+        "default": ""
+      },
+      "application_key": {
+        "name": "Application Key",
+        "type": "string",
+        "required": true,
+        "default": ""
+      },
+      "mac_address": {
+        "name": "MAC Address",
+        "type": "string",
+        "required": true,
+        "default": "AA:BB:CC:DD:EE:FF"
       }
     }
   }
